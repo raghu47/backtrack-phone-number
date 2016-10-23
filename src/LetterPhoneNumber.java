@@ -39,13 +39,6 @@ public class LetterPhoneNumber {
 	
 	public boolean accept(String p, String s) {
 		if (s != null && s.length() == p.length()) {
-			for (int i = 0; i < p.length(); i++) {
-				char key = p.charAt(i);
-				char alpha = s.charAt(i);
-				if (!symbols.get(key).contains(alpha)) {
-					return false;
-				}
-			}
 			return true;
 		}
 		return false;
